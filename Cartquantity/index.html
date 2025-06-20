@@ -1,17 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Cart quantity</title>
+    <title>Cart Quantity</title>
+
 </head>
 <body>
-    <button onclick="console.log(`cart: ${cq}`);">View Quantity</button>
-    <button onclick="cq=cq+1;
-    console.log(`cart: ${cq}`);">+1</button>
-    <button onclick="cq=cq+2;
-    console.log(`cart: ${cq}`);">+2 </button>
-    <button onclick="cq=cq+3;
-    console.log(`cart: ${cq}`);">+3</button>
-    <button onclick="console.log(`The cart has been reset`);">Reset cart</button>
-    <script>let cq=0;</script>
+    <button onclick="
+        //console.log(`cart: ${cq}`);
+        displayquantity();
+        ">
+        View Quantity
+    </button>
+    <button onclick=" 
+         //cartQuantity = cartQuantity+1;
+         updatequantity(1);
+         displayquantity();
+    ">
+        +1
+    </button>
+    <button onclick=" 
+         // cartQuantity = cartQuantity +2 ;
+         updatequantity(2);
+          displayquantity();
+    ">
+        +2
+    </button>
+    <button onclick=" 
+           //cartQuantity = cartQuantity +3 ;
+           updatequantity(3);
+           displayquantity();
+    ">
+        +3
+    </button>
+    <button onclick=" 
+           resetcart();
+           displayquantity();
+           ">
+        Reset cart
+    </button>
+    <script>
+        cq=0;
+    </script>
+    <script src ="script.js"></script>
 </body>
 </html>
