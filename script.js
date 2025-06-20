@@ -11,7 +11,7 @@ console.error("its error")
 console.table([{name:"Alice"},{name:"bob"}]);
 console.time("loop");
 for(let i=0;i<100000;i++){ }
-console.timeEnd("bye");
+console.timeEnd("loop");
 const x=10;
 const y=20;
 const result=eval("x+y");
