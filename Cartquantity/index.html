@@ -5,42 +5,35 @@
 
 </head>
 <body>
-    <button id="display" onclick="
-        //console.log(`cart: ${cq}`);
-        displayquantity();
-        ">
-        View Quantity
-    </button>
-    <button id="plusone" onclick=" 
-         //cartQuantity = cartQuantity+1;
-         updatequantity(1);
+    <button type="button" id="display" onclick="displayquantity();"> View Quantity</button>
+    <button type="button" id="plusone" onclick=" updatequantity(1);
          displayquantity();
     ">
         +1
     </button>
-    <button id="plustwo" onclick=" 
+    <button type="button" id="plustwo" onclick=" 
          // cartQuantity = cartQuantity +2 ;
          updatequantity(2);
           displayquantity();
     ">
         +2
     </button>
-    <button id="plusthree" onclick=" 
+    <button type="button" id="plusthree" onclick=" 
            //cartQuantity = cartQuantity +3 ;
-           updatequantity(3);
-           displayquantity();
+           //updatequantity(3);
+           //displayquantity();
     ">
         +3
     </button>
-    <button id="resetbutton" onclick=" 
-           resetcart();
-           displayquantity();
+    <button type="button" id="resetbutton" onclick=" 
+           //resetcart();
+           //displayquantity();
            ">
         Reset cart
     </button>
     <script>
         cq=0;
     </script>
-    <script src ="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

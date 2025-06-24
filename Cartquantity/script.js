@@ -6,6 +6,31 @@ let cq= Number(localStorage.getItem("cartQuantity"));
 //     cartQuantity=0;
 // }
    cq = cq|| 0;
+   const displayButton=document.getElementById("display");
+   const plusOneButton=document.getElementById("plusone");
+   const plusTwoButton=document.getElementById("plustwo");
+   const plusThreeButton=document.getElementById("plusthree");
+   const resetButton=document.getElementById("resetbutton");
+
+   displayButton.addEventListener("click",() => {
+    displayquantity();
+   });
+    plusOneButton.addEventListener("click",() => {
+    updatequantity(1);
+    displayquantity();
+   });
+    plusTwoButton.addEventListener("click",() => {
+    updatequantity(2);
+    displayquantity();
+   });
+    plusThreeButton.addEventListener("click",() => {
+    updatequantity(3);
+    displayquantity();
+   });
+   resetButton.addEventListener("click",() => {
+    resetcart();
+    displayquantity();
+   });
 
 function updatequantity(value) {
     cq=cq+value;
@@ -19,3 +44,6 @@ function resetcart() {
     localStorage.setItem("cartQuantity",cq);
     console.log('The cart has been reset.');
 }
+
+   
+
